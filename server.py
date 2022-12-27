@@ -20,7 +20,9 @@ def main():
         server_data = client_socket.recv(MAX_MSG_LEGTH).decode('utf-8')
         client_socket.send(server_data.encode('utf-8'))
         print('server recv ' + server_data)
-
+        if server_data == "EXIT":
+            break
+            
     client_socket.close()
     server_socket.close()
 
