@@ -2,7 +2,7 @@ import socket
 
 MAX_MSG_LEGTH = 1024
 SERVER_PORT = 1730
-SERVER_IP = "127.0.0.1"
+SERVER_IP = "0.0.0.0"
 NUMBER_OF_CLIENTS_TO_LISTEN = 1
 
 def main():
